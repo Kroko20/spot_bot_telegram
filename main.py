@@ -11,7 +11,7 @@ import os
 
 colorama.init() # инициализация библиотеки колорама (чтобы красиво текст можно было сделать)
 dt_now = str(datetime.today().strftime('%d.%m.%Y')) # сегодняшняя дата
-bot = telebot.TeleBot('6248526153:AAHBgRXYfupvtARLuVyIaUUxP7y9VwQOpqU') # инициализируем токен бота
+bot = telebot.TeleBot('') # инициализируем токен бота
 print(colorama.Fore.CYAN + "[INFO] " + colorama.Fore.WHITE + f"Бот включен\nДата: {dt_now}") # сообщение о работе бота
 db = sqlite3.connect('database.db', check_same_thread=False) # подключаем базу данных
 sql = db.cursor() # база данных
